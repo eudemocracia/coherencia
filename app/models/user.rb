@@ -44,9 +44,7 @@ class User < ActiveRecord::Base
   named_scope :by_30days_losers, :conditions => "users.endorsements_count > 4", :order => "users.index_30days_change asc"  
 
   belongs_to :picture
-  has_attached_file :buddy_icon, :styles => { :icon_24 => "24x24#", :icon_48 => "48x48#", :icon_96 => "96x96#" }, 
-    :storage => :s3, :s3_credentials => S3_CONFIG, :default_url => "/images/buddy_:style.png",
-    :path => ":class/:attachment/:id/:style.:extension"
+  has_attached_file :buddy_icon, :styles => { :icon_24 => "24x24#", :icon_48 => "48x48#", :icon_96 => "96x96#" } 
   
   validates_attachment_size :buddy_icon, :less_than => 5.megabytes
   validates_attachment_content_type :buddy_icon, :content_type => ['image/jpeg', 'image/png', 'image/gif']
