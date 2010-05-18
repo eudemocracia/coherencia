@@ -13,7 +13,7 @@ class User < ActiveRecord::Base
   named_scope :uncrawled_twitterers, :conditions => "users.twitter_crawled_at is null"
   named_scope :contributed, :conditions => "users.document_revisions_count > 0 or users.point_revisions_count > 0"
   named_scope :no_recent_login, :conditions => "users.loggedin_at < '#{Time.now-90.days}'"
-  named_scope :admins, :conditions => "users.is_admin = true"
+  named_scope :admins, :conditions => "users.is_admin = 'true'"
   named_scope :suspended, :conditions => "users.status = 'suspended'"
   named_scope :probation, :conditions => "users.status = 'probation'"
   named_scope :deleted, :conditions => "users.status = 'deleted'"
