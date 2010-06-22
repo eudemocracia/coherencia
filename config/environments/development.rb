@@ -32,4 +32,4 @@ ENV['TWITTER_LOGIN'] = DB_CONFIG[RAILS_ENV]['twitter_login']
 ENV['TWITTER_PASSWORD'] = DB_CONFIG[RAILS_ENV]['twitter_password']
 ENV['WEBSOLR_URL'] = DB_CONFIG[RAILS_ENV]['websolr_url']
 
-Paperclip.options[:image_magick_path] = "/opt/local/bin"
+Paperclip.options[:image_magick_path] = "/usr/bin"
