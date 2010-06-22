@@ -12,7 +12,7 @@ class Priority < ActiveRecord::Base
   named_scope :not_top_rank, :conditions => "priorities.position > 25"
   named_scope :rising, :conditions => "priorities.trending_score > 0", :order => "priorities.trending_score desc"
   named_scope :falling, :conditions => "priorities.trending_score < 0", :order => "priorities.trending_score asc"
-  named_scope :controversial, :conditions => "priorities.is_controversial = true", :order => "priorities.controversial_score desc"
+  named_scope :controversial, :conditions => "priorities.is_controversial = 'true'", :order => "priorities.controversial_score desc"
 
   named_scope :rising_7days, :conditions => "priorities.position_7days_change > 0"
   named_scope :flat_7days, :conditions => "priorities.position_7days_change = 0"

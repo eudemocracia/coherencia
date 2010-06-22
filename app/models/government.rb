@@ -8,8 +8,8 @@ class Government < ActiveRecord::Base
   named_scope :least_active, :conditions => "status = 'active'", :order => "users_count"
   named_scope :with_branches, :conditions => "default_branch_id is not null"
   named_scope :without_branches, :conditions => "default_branch_id is null"
-  named_scope :facebook, :conditions => "is_facebook = true"
-  named_scope :twitter, :conditions => "is_twitter = true"
+  named_scope :facebook, :conditions => "is_facebook = 'true'"
+  named_scope :twitter, :conditions => "is_twitter = 'true'"
   
   belongs_to :official_user, :class_name => "User"
   belongs_to :color_scheme

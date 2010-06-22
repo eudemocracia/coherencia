@@ -6,8 +6,8 @@ class User < ActiveRecord::Base
     
   named_scope :active, :conditions => "users.status in ('pending','active')"
   named_scope :at_least_one_endorsement, :conditions => "users.endorsements_count > 0"
-  named_scope :newsletter_subscribed, :conditions => "users.is_newsletter_subscribed = true and users.email is not null and users.email <> ''"
-  named_scope :comments_unsubscribed, :conditions => "users.is_comments_subscribed = false"  
+  named_scope :newsletter_subscribed, :conditions => "users.is_newsletter_subscribed = 'true' and users.email is not null and users.email <> ''"
+  named_scope :comments_unsubscribed, :conditions => "users.is_comments_subscribed = 'false'"
   named_scope :twitterers, :conditions => "users.twitter_login is not null and users.twitter_login <> ''"
   named_scope :authorized_twitterers, :conditions => "users.twitter_token is not null"
   named_scope :uncrawled_twitterers, :conditions => "users.twitter_crawled_at is null"
