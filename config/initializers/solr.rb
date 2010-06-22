@@ -25,7 +25,7 @@ module ActsAsSolr
   module ClassMethods
   
     def multi_model_suffix(options)
-      models = "AND (#{solr_configuration[:type_field]}:#{S3_CONFIG['bucket']}#{self.name}"
+      models = "AND (#{solr_configuration[:type_field]}:#{self.name}"
       models << " OR " + options[:models].collect {|m| "#{solr_configuration[:type_field]}:" + m.to_s}.join(" OR ") if options[:models].is_a?(Array)
       models << ")"
     end
@@ -40,7 +40,7 @@ module ActsAsSolr
       doc.boost = validate_boost(configuration[:boost]) if configuration[:boost]
       
       doc << {:id => solr_id,
-              solr_configuration[:type_field] => S3_CONFIG['bucket']+self.class.name,
+              solr_configuration[:type_field] => self.class.name,
               solr_configuration[:primary_key_field] => record_id(self).to_s}
 
       # iterate through the fields and add them to the document,
@@ -81,7 +81,7 @@ module ActsAsSolr
   
   module ParserMethods
     def solr_type_condition
-      subclasses.inject("(#{solr_configuration[:type_field]}:#{S3_CONFIG['bucket']}#{self.name}") do |condition, subclass|
+      subclasses.inject("(#{solr_configuration[:type_field]}:#{self.name}") do |condition, subclass|
         condition << " OR #{solr_configuration[:type_field]}:#{subclass.name}"
       end << ')'
     end
