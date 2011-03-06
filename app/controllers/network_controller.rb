@@ -124,7 +124,7 @@ class NetworkController < ApplicationController
   end
   
   def partners
-    if User.adapter == 'postgresql'
+    if User.adapter != 'mysql'
       @partners = Partner.find(:all, :conditions => "logo_file_name is not null", :order => "RANDOM()")
     else
       @partners = Partner.find(:all, :conditions => "logo_file_name is not null", :order => "rand()")

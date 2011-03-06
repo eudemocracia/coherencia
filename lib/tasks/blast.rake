@@ -82,8 +82,12 @@ namespace :blast do
   
   desc "send blasts"
   task :send_emails => :environment do
-    Government.current = Government.all.last    
-    blasts = Blast.find(:all, :conditions => "status = 'pending'", :order => "rand()", :limit => 1000)
+    Government.current = Government.all.last
+    if User.adapter != 'mysql'
+      blasts = Blast.find(:all, :conditions => "status = 'pending'", :order => "RANDOM()", :limit => 1000)
+    else
+      blasts = Blast.find(:all, :conditions => "status = 'pending'", :order => "rand()", :limit => 1000)
+    end
     for blast in blasts
       blast.send!
     end

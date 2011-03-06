@@ -110,7 +110,7 @@ class PrioritizerController < ApplicationController
     end
   
     def new_duel
-      if User.adapter == 'postgresql'
+      if User.adapter != 'mysql'
         @endorsement1 = current_user.endorsements.active.find(:all, :conditions => "position > 5", :order => "RANDOM()", :limit => 1)[0]
         @endorsement2 = current_user.endorsements.active.find(:all, :conditions => "position between #{(@endorsement1.position/1.5).to_i-2} and #{(@endorsement1.position/1.5).to_i+2} and id <> #{@endorsement1.id.to_s}", :order => "RANDOM()", :limit => 1)[0]
       else
@@ -120,7 +120,7 @@ class PrioritizerController < ApplicationController
     end
     
     def new_single
-      if User.adapter == 'postgresql'
+      if User.adapter != 'mysql'
         if current_user.endorsements_count > 3
           @priority = Priority.published.find(:all, :conditions => ["id not in (?)",current_priority_ids], :order => "RANDOM()", :limit => 1)[0]
         else

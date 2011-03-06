@@ -14,7 +14,7 @@ namespace :crawl do
   desc "feeds"
   task :feeds => :environment do
     Government.current = Government.all.last    
-    if User.adapter == 'postgresql'
+    if User.adapter != 'mysql'
       feeds = Feed.find(:all, :order => "RANDOM()")
     else
       feeds = Feed.find(:all, :order => "rand()")

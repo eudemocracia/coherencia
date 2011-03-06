@@ -3,7 +3,7 @@ class AdminController < ApplicationController
   before_filter :admin_required
   
   def random_user
-    if User.adapter == 'postgresql'
+    if User.adapter != 'mysql'
       users = User.find(:all, :conditions => "status = 'active'", :order => "RANDOM()", :limit => 1)
     else
       users = User.find(:all, :conditions => "status = 'active'", :order => "rand()", :limit => 1)

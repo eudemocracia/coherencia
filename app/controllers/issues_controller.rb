@@ -171,7 +171,7 @@ class IssuesController < ApplicationController
   # this doesn't work in pgsql :(
   def random
     @page_title = t('tags.random.title', :tag_name => @tag_names.titleize, :target => current_government.target)
-    if User.adapter == 'postgresql'
+    if User.adapter != 'mysql'
       flash[:error] = "This page doesn't work, sorry."
       redirect_to "/issues/" + @tag.slug
       return
