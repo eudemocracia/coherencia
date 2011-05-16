@@ -1,27 +1,20 @@
-Hola {{ user.first_name }},
+Hello {{ user.first_name }},
 
-Por favor confirmá tu cuenta así podemos permitirte la participación completa en el sitio. No nos gusta
-pedirlo, pero es una forma de reducir el spam.
+Please verify your account so we can clear you for full participation on the site.  I hate having to ask, but it's one way we can cut down on spammers.
 
-Confirmá tu cuenta: {{ user.root_url }}activate/{{ user.activation_code }}?utm_source=activation&utm_medium=email
+Verify your account: {{ user.root_url }}activate/{{ user.activation_code }}?utm_source=activation&utm_medium=email
 
-Por favor ayudanos a crecer! Podés importar tus contactos de Google, Yahoo, Windows Live o Facebook y
-encontrar gente que ya conocés en el sitio, e invitar a los que no están todavía
+Please help us grow!  You can import your Google, Yahoo, Windows Live or Facebook contacts and find people you already know on the site, and invite people who aren't.  
 
-Encontrá gente que conocés: {{ user.root_url }}network/find?utm_source=signup&utm_medium=email
+Find people you know: {{ user.root_url }}network/find?utm_source=signup&utm_medium=email
 
-Ganás 5{{ government.currency_short_name }} por cada persona que refieras al sitio.  ¿Qué carajo es un {{
-government.currency_short_name }}?  Significa "{{ government.currency_name | downcase  }}", y es la forma de
-medir tu influencia en {{ government.name }}. Mientras más gente encuentre tus aportes y discusiones útiles,
-más {{ government.currency_short_name }} ganás, con los que podés comprar "avisos" para las prioridades que
-más te importan, entre otras cosas.
+You'll earn 5{{ government.currency_short_name }} for each person you refer.  What the heck is {{ government.currency_short_name }}?  It stands for "{{ government.currency_name | downcase  }}", and it's a way to track your influence at {{ government.name }}.  The more people who find your updates and talking points useful, the more {{ government.currency_short_name }} you earn, which you can use to buy "ads" for priorities you care about, amongst other things.  
 
-Más detalles sobre {{ government.currency_name | downcase }} acá: {{ user.root_url }}about/faq#pc
+More details on {{ government.currency_name | downcase }} here: {{ user.root_url }}about/faq#pc
 
 {{ government.admin_name }}
 {{ government.admin_email }}
 http://{{ government.base_url }}
 
 ---
-Esta es una notificación automática de {{ government.name }} enviada a {{ user.email }}. Si no querés
-recibir emails de {{ government.name }}, podés cambiar tus preferencias de email acá: {{ user.unsubscribe_url }}
+This is an automated notification from {{ government.name }} sent to {{ user.email }}.  If you do not wish to receive emails from {{ government.name }}, you can change your email settings here: {{ user.unsubscribe_url }}
