@@ -628,7 +628,7 @@ es:
             yours: "Tu iniciativa #%{position}"
             title: "Presioná el número para cambiar su posición en tu lista. Podés también \"agarrar y soltar\" los nombres para ordenarlos."
     facebook:
-        synced: "Tu cuenta está ahora sincronizada con Facebook. En el futuro, para ingresar, simplemente presioná el botón azul grande de Facebook."
+        synced: "Tu cuenta ahora está sincronizada con Facebook. En el futuro, para ingresar, simplemente presioná el botón azul grande de Facebook."
         invite:
             title: "Invitá a tus amigos de Facebook a unirse a %{government_name}"
             success: "Ya invitaste a %{number} de tus amigos de Facebook"
