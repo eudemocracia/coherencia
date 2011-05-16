@@ -1,430 +1,430 @@
-es:
+en:
     activity:
         bulletin:
             profile:
                 new:
-                    name: "{{user_name}} posted a bulletin to {{other_user_name}} profile"
-                    nouser: "Posted a bulletin to {{other_user_name}} profile"
+                    name: "%{user_name}} publicó un anuncio en el perfil de %{other_user_name}}"
+                    nouser: "Se publicó un anuncio en el perfil de %{other_user_name}}"
             new:
                 name:
-                    known: "{{user_name}} posted a bulletin to {{discussion_name}}"
-                    unknown: "{{user_name}} posted a bulletin"
+                    known: "%{user_name}} publicó un anuncio en %{discussion_name}}"
+                    unknown: "%{user_name}} publicó un anuncio"
                 nouser:
-                    known: "Posted a bulletin to {{discussion_name}}"
-                    unknown: "Posted a bulletin"
+                    known: "Se publicó un anuncio en %{discussion_name}}"
+                    unknown: "Se publicó un anuncio"
         capital:
             acquisition:
                 proposal:
                     approved:
-                        name: "{{user_name}} earned {{capital}}{{currency_short_name}} because {{new_priority_name}} successfully acquired {{priority_name}}"
-                        nouser: "Earned {{capital}}{{currency_short_name}} because {{new_priority_name}} successfully acquired {{priority_name}}"
+                        name: "%{user_name}} ganó %{capital}}%{currency_short_name}} porque %{new_priority_name}} adquirió con éxito a %{priority_name}}"
+                        nouser: "se ganó %{capital}}%{currency_short_name}} porque %{new_priority_name}} adquirió con éxito a %{priority_name}}"
                     deleted:
-                        name: "{{user_name}} was refunded {{capital}}{{currency_short_name}} because no vote will be held on {{new_priority_name}} acquiring {{priority_name}}"
-                        nouser: "Received a refund of {{capital}}{{currency_short_name}} because no vote will be held on {{new_priority_name}} acquiring {{priority_name}}"
+                        name: "Se le reembolsó %{capital}}%{currency_short_name}} a %{user_name}} porque no se votará para que %{new_priority_name}} adquiera a %{priority_name}}"
+                        nouser: "Se reembolsaron %{capital}}%{currency_short_name}} porque no se votará para que %{new_priority_name}} adquiera a %{priority_name}}"
                     new:
-                        name: "{{user_name}} spent {{capital}}{{currency_short_name}} on a proposal for {{new_priority_name}} to acquire {{priority_name}}"
-                        nouser: "Spent {{capital}}{{currency_short_name}} on a <a href='{{proposal_url}}'>proposal</a> for {{new_priority_name}} to acquire {{priority_name}}"
-                        noself: "{{user_name}} spent {{capital}}{{currency_short_name}} on a <a href='{{proposal_url}}'>proposal</a> for this priority to be acquired by {{new_priority_name}}"                        
-                        link: "{{user_name}} spent {{capital}}{{currency_short_name}} on a <a href='{{proposal_url}}'>proposal</a> for {{new_priority_name}} to acquire {{priority_name}}"
+                        name: "%{user_name}} invirtió %{capital}}%{currency_short_name}} en una iniciativa para que %{new_priority_name}} adquiera a %{priority_name}}"
+                        nouser: "Se invirtieron %{capital}}%{currency_short_name}} en una <a href='%{proposal_url}}'>iniciativa</a> para que %{new_priority_name}} adquiera a %{priority_name}}"
+                        noself: "%{user_name}} invirtió %{capital}}%{currency_short_name}} en una <a href='%{proposal_url}}'>propuesta</a> para que esta iniciativa sea adquirida por %{new_priority_name}}"                        
+                        link: "%{user_name}} invirtió %{capital}}%{currency_short_name}} en una <a href='%{proposal_url}}'>propuesta</a> para que %{new_priority_name}} adquiera %{priority_name}}"
             ad:
                 new:
-                    name: "{{user_name}} spent {{capital}}{{currency_short_name}} on an ad for {{priority_name}}"
-                    link: "{{user_name}} spent {{capital}}{{currency_short_name}} on an <a href='{{ad_url}}'>ad</a> for {{priority_name}}"
-                    noself: "{{user_name}} spent {{capital}}{{currency_short_name}} on an <a href='{{ad_url}}'>ad</a> for this priority"                    
-                    nouser: "Spent {{capital}}{{currency_short_name}} on an <a href='{{ad_url}}'>ad</a> for {{priority_name}}"
+                    name: "%{user_name}} invirtió %{capital}}%{currency_short_name}} en un anuncio para %{priority_name}}"
+                    link: "%{user_name}} invirtió %{capital}}%{currency_short_name}} en un <a href='%{ad_url}}'>aviso</a> para %{priority_name}}"
+                    noself: "%{user_name}} invirtió %{capital}}%{currency_short_name}} en un <a href='%{ad_url}}'>aviso</a> para esta iniciativa"                    
+                    nouser: "Invirtió %{capital}}%{currency_short_name}} en un <a href='%{ad_url}}'>aviso</a> para %{priority_name}}"
             point:
                 helpful:
                     everyone:
-                        name: "{{user_name}} earned {{capital}}{{currency_short_name}} because both endorsers and opposers found {{point_name}} helpful"
-                        nouser: "Earned {{capital}}{{currency_short_name}} because both endorsers and opposers found {{point_name}} helpful"
+                        name: "%{user_name}} ganó %{capital}}%{currency_short_name}} porque tanto la gente a favor como en contra, cree que %{point_name}} es útil"
+                        nouser: "Ganaron %{capital}}%{currency_short_name}} porque tanto la gente a favor como en contra, cree que %{point_name}} es útil"
                     endorsers:
-                        name: "{{user_name}} earned {{capital}}{{currency_short_name}} because endorsers found {{point_name}} helpful"
-                        nouser: "Earned {{capital}}{{currency_short_name}} because endorsers found {{point_name}} helpful"
+                        name: "%{user_name}} ganó %{capital}}%{currency_short_name}} porque los que están a favor creen que %{point_name}} es útil"
+                        nouser: "Ganaron %{capital}}%{currency_short_name}} porque los que están a favor creen que %{point_name}} es útil"
                     opposers:
-                        name: "{{user_name}} earned {{capital}}{{currency_short_name}} because opposers found {{point_name}} helpful"
-                        nouser: "Earned {{capital}}{{currency_short_name}} because opposers found {{point_name}} helpful"
+                        name: "%{user_name}} ganó %{capital}}%{currency_short_name}} porque los que están en contra creen que %{point_name}} es útil"
+                        nouser: "Ganaron %{capital}}%{currency_short_name}} porque los que están en contra creen que %{point_name}} es útil"
                     undeclareds:
-                        name: "{{user_name}} earned {{capital}}{{currency_short_name}} because undeclareds found {{point_name}} helpful"
-                        nouser: "Earned {{capital}}{{currency_short_name}} because undeclareds found {{point_name}} helpful"
+                        name: "%{user_name}} ganó %{capital}}%{currency_short_name}} porque los que no se pronunciaron creen que %{point_name}} es útil"
+                        nouser: "Ganaron %{capital}}%{currency_short_name}} porque los que no se pronunciaron creen que %{point_name}} es útil"
                     deleted:
-                        name: "{{user_name}} lost {{capital}}{{currency_short_name}} for deleting {{point_name}} because people found it helpful"
-                        nouser: "Lost {{capital}}{{currency_short_name}} for deleting {{point_name}} because people found it helpful"
+                        name: "%{user_name}} perdió %{capital}}%{currency_short_name}} por eliminar %{point_name}} ya que hubo gente que lo creía útil"
+                        nouser: "Perdieron %{capital}}%{currency_short_name}} por eliminar %{point_name}} ya que hubo gente que lo creía útil"
                 unhelpful:
                     everyone:
-                        name: "{{user_name}} lost {{capital}}{{currency_short_name}} because both endorsers and opposers found {{point_name}} unhelpful"
-                        nouser: "Lost {{capital}}{{currency_short_name}} because both endorsers and opposers found {{point_name}} unhelpful"
+                        name: "%{user_name}} perdió %{capital}}%{currency_short_name}} porque tanto la gente a favor como en contra, cree que %{point_name}} no es útil"
+                        nouser: "Perdieron %{capital}}%{currency_short_name}} porque tanto la gente a favor como en contra, cree que %{point_name}} no es útil"
                     endorsers:
-                        name: "{{user_name}} lost {{capital}}{{currency_short_name}} because endorsers found {{point_name}} unhelpful"
-                        nouser: "Lost {{capital}}{{currency_short_name}} because endorsers found {{point_name}} unhelpful"
+                        name: "%{user_name}} perdió %{capital}}%{currency_short_name}} porque los que están a favor creen que %{point_name}} no es útil"
+                        nouser: "Perdieron %{capital}}%{currency_short_name}} porque los que están a favor creen que %{point_name}} es útil"
                     opposers:
-                        name: "{{user_name}} lost {{capital}}{{currency_short_name}} because opposers found {{point_name}} unelpful"
-                        nouser: "Lost {{capital}}{{currency_short_name}} because opposers found {{point_name}} unelpful"
+                        name: "%{user_name}} perdió %{capital}}%{currency_short_name}} porque los que están en contra creen que %{point_name}} no es útil"
+                        nouser: "Perdieron %{capital}}%{currency_short_name}} porque los que están en contra creen que %{point_name}} no es útil"
                     undeclareds:
-                        name: "{{user_name}} lost {{capital}}{{currency_short_name}} because undeclares found {{point_name}} unhelpful"
-                        nouser: "Lost {{capital}}{{currency_short_name}} because undeclares found {{point_name}} unhelpful"
+                        name: "%{user_name}} perdió %{capital}}%{currency_short_name}} porque los que no se pronunciaron creen que %{point_name}} no es útil"
+                        nouser: "Perdieron %{capital}}%{currency_short_name}} porque los que no se pronunciaron creen que %{point_name}} no es útil"
             twitter:
                 followers:
                     earned:
                         name:
-                            one: "{{user_name}} earned {{count}}{{currency_short_name}} for 1 new follower on Twitter"
-                            other: "{{user_name}} earned {{count}}{{currency_short_name}} for {{count}} new followers on Twitter"
+                            one: "%{user_name}} ganó %{count}}%{currency_short_name}} por tener 1 nuevo seguidor en Twitter"
+                            other: "%{user_name}} ganó %{count}}%{currency_short_name}} por sus %{count}} nuevos seguidores en Twitter"
                         link:
-                            one: "{{user_name}} earned {{count}}{{currency_short_name}} for 1 new follower on <a href='http://twitter.com/{{twitter_login}}'>Twitter</a>"
-                            other: "{{user_name}} earned {{count}}{{currency_short_name}} for {{count}} new followers on <a href='http://twitter.com/{{twitter_login}}'>Twitter</a>"            
+                            one: "%{user_name}} ganó %{count}}%{currency_short_name}} por tener 1 nuevo seguidor en <a href='http://twitter.com/%{twitter_login}}'>Twitter</a>"
+                            other: "%{user_name}} ganó %{count}}%{currency_short_name}} por sus %{count}} nuevos seguidores en <a href='http://twitter.com/%{twitter_login}}'>Twitter</a>"            
                         nouser:
-                            one: "Earned {{count}}{{currency_short_name}} for 1 new follower on <a href='http://twitter.com/{{twitter_login}}'>Twitter</a>"
-                            other: "Earned {{count}}{{currency_short_name}} for {{count}} new followers on <a href='http://twitter.com/{{twitter_login}}'>Twitter</a>"                                            
+                            one: "Ganaron %{count}}%{currency_short_name}} por 1 nuevo seguidor en <a href='http://twitter.com/%{twitter_login}}'>Twitter</a>"
+                            other: "Ganó %{count}}%{currency_short_name}} por sus %{count}} nuevos seguidores en <a href='http://twitter.com/%{twitter_login}}'>Twitter</a>"                                            
                     lost:
                         name:
-                            one: "{{user_name}} lost {{count}}{{currency_short_name}} for 1 less follower on Twitter"
-                            other: "{{user_name}} lost {{count}}{{currency_short_name}} for {{count}} less followers on Twitter"
+                            one: "%{user_name}} perdió %{count}}%{currency_short_name}} por 1 seguidor menos en Twitter"
+                            other: "%{user_name}} lost %{count}}%{currency_short_name}} por tener %{count}} seguidores menos en Twitter"
                         link:
-                            one: "{{user_name}} lost {{count}}{{currency_short_name}} for 1 less follower on <a href='http://twitter.com/{{twitter_login}}'>Twitter</a>"
-                            other: "{{user_name}} lost {{count}}{{currency_short_name}} for {{count}} less followers on <a href='http://twitter.com/{{twitter_login}}'>Twitter</a>"
+                            one: "%{user_name}} perdió %{count}}%{currency_short_name}} por 1 seguidor menos en <a href='http://twitter.com/%{twitter_login}}'>Twitter</a>"
+                            other: "%{user_name}} perdió %{count}}%{currency_short_name}} por tener %{count}} seguidores menos en <a href='http://twitter.com/%{twitter_login}}'>Twitter</a>"
                         nouser:
-                            one: "Lost {{count}}{{currency_short_name}} for 1 less follower on <a href='http://twitter.com/{{twitter_login}}'>Twitter</a>"
-                            other: "Lost {{count}}{{currency_short_name}} for {{count}} less followers on <a href='http://twitter.com/{{twitter_login}}'>Twitter</a>"                            
+                            one: "Perdieron %{count}}%{currency_short_name}} por tener 1 seguidor menos en <a href='http://twitter.com/%{twitter_login}}'>Twitter</a>"
+                            other: "Perdieron %{count}}%{currency_short_name}} por tener %{count}} seguidores menos en <a href='http://twitter.com/%{twitter_login}}'>Twitter</a>"                            
             followers:
                 earned:
                     name:
-                        one: "{{user_name}} earned {{count}}{{currency_short_name}} for 1 new follower"
-                        other: "{{user_name}} earned {{count}}{{currency_short_name}} for {{count}} new followers"
+                        one: "%{user_name}} ganó %{count}}%{currency_short_name}} por 1 nuevo seguidor"
+                        other: "%{user_name}} ganó %{count}}%{currency_short_name}} por tener %{count}} nuevos seguidores"
                     nouser:
-                        one: "Earned {{count}}{{currency_short_name}} for 1 new follower"
-                        other: "Earned {{count}}{{currency_short_name}} for {{count}} new followers"
+                        one: "Ganaron %{count}}%{currency_short_name}} por tener 1 nuevo seguidor"
+                        other: "Ganaron %{count}}%{currency_short_name}} por tener %{count}} nuevos seguidores"
 
                 lost:
                     name:
-                        one: "{{user_name}} lost {{count}}{{currency_short_name}} for 1 less follower"
-                        other: "{{user_name}} lost {{count}}{{currency_short_name}} for {{count}} less followers"  
+                        one: "%{user_name}} perdió %{count}}%{currency_short_name}} por tener 1 seguidor menos"
+                        other: "%{user_name}} perdió %{count}}%{currency_short_name}} por tener %{count}} seguidores menos"  
                     nouser:
-                        one: "Lost {{count}}{{currency_short_name}} for 1 less follower"
-                        other: "Lost {{count}}{{currency_short_name}} for {{count}} less followers"
+                        one: "Perdieron %{count}}%{currency_short_name}} por tener 1 seguidor menos"
+                        other: "Perdieron %{count}}%{currency_short_name}} por tener %{count}} seguidores menos"
             government:
                 new:
-                    name: "{{user_name}} earned {{capital}}{{currency_short_name}} for founding this nation"
-                    nouser: "Earned {{capital}}{{currency_short_name}} for founding this nation"
+                    name: "%{user_name}} ganó %{capital}}%{currency_short_name}} por fundar esta comunidad"
+                    nouser: "Ganaron %{capital}}%{currency_short_name}} por fundar esta comunidad"
             ignorers:
                 earned:
                     name:
-                        one: "{{user_name}} earned {{count}}{{currency_short_name}} because someone stopped ignoring"
-                        other: "{{user_name}} earned {{count}}{{currency_short_name}} because {{count}} people stopped ignoring"
+                        one: "%{user_name}} ganó %{count}}%{currency_short_name}} porque alguien dejó de ignorarlo"
+                        other: "%{user_name}} ganó %{count}}%{currency_short_name}} porque %{count}} personas dejaron de ignorarlo"
                     nouser:
-                          one: "Earned {{count}}{{currency_short_name}} because someone stopped ignoring"
-                          other: "Earned {{count}}{{currency_short_name}} because {{count}} people stopped ignoring"
+                          one: "Ganaron %{count}}%{currency_short_name}} porque alguien dejó de ignorarlo"
+                          other: "Earned %{count}}%{currency_short_name}} porque %{count}} personas dejaron de ignorarlo"
                 lost:
                     name:
-                        one: "{{user_name}} lost {{count}}{{currency_short_name}} because someone is ignoring"
-                        other: "{{user_name}} lost {{count}}{{currency_short_name}} because {{count}} people are ignoring"
+                        one: "%{user_name}} perdió %{count}}%{currency_short_name}} porque alguien lo está ignorando"
+                        other: "%{user_name}} perdió %{count}}%{currency_short_name}} porque %{count}} personas lo están ignorando"
                     nouser:
-                        one: "Lost {{count}}{{currency_short_name}} because someone is ignoring"
-                        other: "Lost {{count}}{{currency_short_name}} because {{count}} people are ignoring"
+                        one: "Perdieron %{count}}%{currency_short_name}} porque alguien lo está ignorando"
+                        other: "Perdieron %{count}}%{currency_short_name}} porque %{count}} personas lo están ignorando"
             inactive:
-                name: "{{user_name}} lost {{capital}}{{currency_short_name}} for not logging in recently"
-                nouser: "Lost {{capital}}{{currency_short_name}} for not logging in recently"
+                name: "%{user_name}} perdió %{capital}}%{currency_short_name}} por no ingresar al sistema recientemente"
+                nouser: "Perdieron %{capital}}%{currency_short_name}} por no ingresar al sistema recientemente"
             user:
                 recruited:
-                    name: "{{user_name}} earned {{capital}}{{currency_short_name}} for recruiting {{other_user_name}} to {{government_name}}"
-                    nouser: "Earned {{capital}}{{currency_short_name}} for recruiting {{other_user_name}} to {{government_name}}"                
+                    name: "%{user_name}} ganó %{capital}}%{currency_short_name}} por acercar a %{other_user_name}} a %{government_name}}"
+                    nouser: "Ganaron %{capital}}%{currency_short_name}} por acercar a %{other_user_name}} a %{government_name}}"                
             obama_letter:
-                name: "{{user_name}} earned {{capital}}{{currency_short_name}} for sending their agenda to {{official_user_name}}"
-                nouser: "Earned {{capital}}{{currency_short_name}} for sending their agenda to {{official_user_name}}"
+                name: "%{user_name}} ganó %{capital}}%{currency_short_name}} por enviar sus prioridades a la %{official_user_name}}"
+                nouser: "Ganaron %{capital}}%{currency_short_name}} por enviar sus prioridades a la %{official_user_name}}"
             partner:
                 user:
                     recruited:
-                        name: "{{user_name}} earned {{capital}}{{currency_short_name}} for recruiting {{other_user_name}} to {{government_name}} through {{partner_url}}"
-                        nouser: "Earned {{capital}}{{currency_short_name}} for recruiting {{other_user_name}} to {{government_name}} through {{partner_url}}"           
+                        name: "%{user_name}} ganó %{capital}}%{currency_short_name}} por acercar a %{other_user_name}} a %{government_name}} a través de %{partner_url}}"
+                        nouser: "Ganaron %{capital}}%{currency_short_name}} por acercar a %{other_user_name}} a %{government_name}} a través de %{partner_url}}"           
             legislators:
                 added:
-                    name: "{{user_name}} earned {{capital}}{{currency_short_name}} for adding legislators to their account"
-                    nouser: "Earned {{capital}}{{currency_short_name}} for adding legislators to their account"              
+                    name: "%{user_name}} ganó %{capital}}%{currency_short_name}} por añadir miembros a su cuenta"
+                    nouser: "Ganaron %{capital}}%{currency_short_name}} por añadir miembros a su cuenta"              
             warning:
-                name: "{{user_name}} lost {{capital}}{{currency_short_name}} for violating the site rules"
-                link: "{{user_name}} lost {{capital}}{{currency_short_name}} for violating the <a href='/about/rules'>site rules</a>"
-                nouser: "Lost {{capital}}{{currency_short_name}} for violating the site rules"
+                name: "%{user_name}} perdió %{capital}}%{currency_short_name}} por violar las reglas"
+                link: "%{user_name}} perdió %{capital}}%{currency_short_name}} por violar las <a href='/about/rules'>reglas</a>"
+                nouser: "Perdieron %{capital}}%{currency_short_name}} por violar las reglas"
         comment:
             participant:
                 name: 
-                    one: "{{user_name}} commented on {{discussion_name}}"
-                    other: "{{user_name}} left {{count}} comments on {{discussion_name}}"
+                    one: "%{user_name}} comentó en %{discussion_name}}"
+                    other: "%{user_name}} dejó %{count}} comentarios en %{discussion_name}}"
                 nouser: 
-                    one: "Commented on {{discussion_name}}"
-                    other: "Left {{count}} comments on {{discussion_name}}"        
+                    one: "Comentó en %{discussion_name}}"
+                    other: "Dejó %{count}} comentarios en %{discussion_name}}"        
         discussion:
             following:
                 new:
-                    name: "{{user_name}} is following the discussion on {{discussion_name}}"
-                    nouser: "Following the discussion on {{discussion_name}}"
+                    name: "%{user_name}} está siguiendo el debate en %{discussion_name}}"
+                    nouser: "Siguiendo el debate en %{discussion_name}}"
                 delete:
-                    name: "{{user_name}} stopped following the discussion on {{discussion_name}}"
-                    nouser: "Stopped following the discussion on {{discussion_name}}"
+                    name: "%{user_name}} dejó de seguir el debate en %{discussion_name}}"
+                    nouser: "Dejaron de seguir el debate en %{discussion_name}}"
         endorsement:
             new:
                 name: 
-                    known: "{{user_name}} endorsed {{priority_name}} at priority #{{position}}"
-                    unknown: "{{user_name}} endorsed {{priority_name}}"
+                    known: "%{user_name}} apoyó %{priority_name}} en la posición #%{position}}"
+                    unknown: "%{user_name}} apoyó %{priority_name}}"
                 noself:
-                    known: "{{user_name}} endorsed at priority #{{position}}"
-                    unknown: "{{user_name}} endorsed"                
+                    known: "%{user_name}} apoyó en la posición #%{position}}"
+                    unknown: "%{user_name}} apoyó"                
                 nouser: 
-                    known: "Endorsed {{priority_name}} at priority #{{position}}"
-                    unknown: "Endorsed {{priority_name}}"
+                    known: "Apoyaron %{priority_name}} en la posición #%{position}}"
+                    unknown: "Apoyaron %{priority_name}}"
                 ad:
                     name: 
-                        known: "{{user_name}} endorsed {{priority_name}} at priority #{{position}} due to {{ad_user}} ad"
-                        unknown: "{{user_name}} endorsed {{priority_name}} due to {{ad_user}} ad"
+                        known: "%{user_name}} apoyó %{priority_name}} en la posición #%{position}} debido al aviso %{ad_user}}"
+                        unknown: "%{user_name}} apoyó %{priority_name}} debido al aviso %{ad_user}}"
                     link: 
-                        known: "{{user_name}} endorsed {{priority_name}} at priority #{{position}} due to <a href='{{ad_url}}'>{{ad_user}} ad</a>"
-                        unknown: "{{user_name}} endorsed {{priority_name}} due to <a href='{{ad_url}}'>{{ad_user}} ad</a>"                        
+                        known: "%{user_name}} apoyó %{priority_name}} en la posición #%{position}} debido al <a href='%{ad_url}}'>aviso %{ad_user}}</a>"
+                        unknown: "%{user_name}} apoyó %{priority_name}} debido al <a href='%{ad_url}}'>aviso %{ad_user}}</a>"                        
                     noself:
-                        known: "{{user_name}} endorsed at priority #{{position}} due to <a href='{{ad_url}}'>{{ad_user}} ad</a>"
-                        unknown: "{{user_name}} endorsed due to <a href='{{ad_url}}'>{{ad_user}} ad</a>"                
+                        known: "%{user_name}} apoyó en la posición #%{position}} debido al <a href='%{ad_url}}'>aviso %{ad_user}}</a>"
+                        unknown: "%{user_name}} apoyó debido al <a href='%{ad_url}}'>aviso %{ad_user}}</a>"                
                     nouser: 
-                        known: "Endorsed {{priority_name}} at priority #{{position}} due to <a href='{{ad_url}}'>{{ad_user}} ad</a>"
-                        unknown: "Endorsed {{priority_name}} due to <a href='{{ad_url}}'>{{ad_user}} ad</a>"          
+                        known: "Apoyaron %{priority_name}} en la posición #%{position}} debido al <a href='%{ad_url}}'>aviso %{ad_user}}</a>"
+                        unknown: "Endorsed %{priority_name}} due to <a href='%{ad_url}}'>%{ad_user}} ad</a>"          
             delete:
-                name: "{{user_name}} no longer endorses {{priority_name}}"
-                noself: "{{user_name}} no longer endorses"
-                nouser: "Stopped endorsing {{priority_name}}"
+                name: "%{user_name}} ya no apoya %{priority_name}}"
+                noself: "%{user_name}} ya no apoya"
+                nouser: "Dejó de apoyar %{priority_name}}"
             replaced:
-                name: "{{user_name}} endorsed {{new_priority_name}} instead of {{priority_name}}"
-                noself: "{{user_name}} endorsed {{new_priority_name}} instead"
-                nouser: "Endorsed {{new_priority_name}} instead of {{priority_name}}"
+                name: "%{user_name}} apoyó %{new_priority_name}} en vez de %{priority_name}}"
+                noself: "%{user_name}} apoyó %{new_priority_name}} en vez"
+                nouser: "Apoyó %{new_priority_name}} en vez de %{priority_name}}"
                 implicit:
-                    name: "{{user_name}} is now endorsing {{new_priority_name}} because {{priority_name}} was acquired"
-                    nouser: "Now endorsing {{new_priority_name}} because {{priority_name}} was acquired"
+                    name: "%{user_name}} ahora apoya %{new_priority_name}} porque %{priority_name}} fue adquirida"
+                    nouser: "Ahora apoyando %{new_priority_name}} porque %{priority_name}} fue adquirida"
             flipped:
-                name: "{{user_name}} endorsed {{new_priority_name}} instead of opposing {{priority_name}}"
-                nouser: "Endorsed {{new_priority_name}} instead of opposing {{priority_name}}"
+                name: "%{user_name}} apoyó %{new_priority_name}} en vez de oponerse a %{priority_name}}"
+                nouser: "Apoyó %{new_priority_name}} en vez de oponerse a %{priority_name}}"
                 implicit:
-                    name: "{{user_name}} is now endorsing {{new_priority_name}} because it acquired the opposers of {{priority_name}}"
-                    nouser: "Now endorsing {{new_priority_name}} because it acquired the opposers of {{priority_name}}"
+                    name: "%{user_name}} ahora apoya %{new_priority_name}} porque adquirió a los opositores a %{priority_name}}"
+                    nouser: "Ahora apoyando %{new_priority_name}} porque adquirió a los opositores a %{priority_name}}"
         following:
             new:
-                name: "{{user_name}} is now following {{other_user_name}}"
-                nouser: "Following {{other_user_name}}"
+                name: "%{user_name}} está siguiendo a %{other_user_name}}"
+                nouser: "Siguiendo %{other_user_name}}"
             delete:
-                name: "{{user_name}} stopped following {{other_user_name}}"
-                nouser: "Stopped following {{other_user_name}}"
+                name: "%{user_name}} dejó de seguir %{other_user_name}}"
+                nouser: "Dejaron de seguir %{other_user_name}}"
         ignoring:
             new:
-                name: "{{user_name}} is ignoring someone"
+                name: "%{user_name}} está ignorando a alguien"
             delete:
-                name: "{{user_name}} stopped ignoring someone"                
+                name: "%{user_name}} dejó de ignorar a alguien"                
         opposition:
             new:
                 name: 
-                    known: "{{user_name}} opposed {{priority_name}} at priority #{{position}}"
-                    unknown: "{{user_name}} opposed {{priority_name}}"
+                    known: "%{user_name}} se opuso a %{priority_name}} en la posición #%{position}}"
+                    unknown: "%{user_name}} se opuso a %{priority_name}}"
                 noself:
-                    known: "{{user_name}} opposed at priority #{{position}}"
-                    unknown: "{{user_name}} opposed"                
+                    known: "%{user_name}} se opuso a la iniciativa #%{position}}"
+                    unknown: "%{user_name}} se opuso"                
                 nouser: 
-                    known: "Opposed {{priority_name}} at priority #{{position}}"
-                    unknown: "Opposed {{priority_name}}"
+                    known: "Se opusieron a %{priority_name}} en la posición #%{position}}"
+                    unknown: "Se opusieron a %{priority_name}}"
                 ad:
                     name: 
-                        known: "{{user_name}} opposed {{priority_name}} at priority #{{position}} due to {{ad_user}} ad"
-                        unknown: "{{user_name}} opposed {{priority_name}} due to {{ad_user}} ad"
+                        known: "%{user_name}} se opuso a %{priority_name}} en la posición #%{position}} debido al aviso %{ad_user}}"
+                        unknown: "%{user_name}} se opuso a %{priority_name}} debido al aviso %{ad_user}}"
                     link: 
-                        known: "{{user_name}} opposed {{priority_name}} at priority #{{position}} due to <a href='{{ad_url}}'>{{ad_user}} ad</a>"
-                        unknown: "{{user_name}} opposed {{priority_name}} due to <a href='{{ad_url}}'>{{ad_user}} ad</a>"                        
+                        known: "%{user_name}} se opuso a %{priority_name}} en la posición #%{position}} debido al <a href='%{ad_url}}'>aviso %{ad_user}}</a>"
+                        unknown: "%{user_name}} se opuso a %{priority_name}} debido al <a href='%{ad_url}}'>aviso %{ad_user}}</a>"                        
                     noself:
-                        known: "{{user_name}} opposed at priority #{{position}} due to <a href='{{ad_url}}'>{{ad_user}} ad</a>"
-                        unknown: "{{user_name}} opposed due to <a href='{{ad_url}}'>{{ad_user}} ad</a>"                
+                        known: "%{user_name}} se opuso a la iniciativa #%{position}} debido al <a href='%{ad_url}}'>aviso %{ad_user}}</a>"
+                        unknown: "%{user_name}} se opuso debido al <a href='%{ad_url}}'>aviso %{ad_user}}</a>"                
                     nouser: 
-                        known: "Opposed {{priority_name}} at priority #{{position}} due to <a href='{{ad_url}}'>{{ad_user}} ad</a>"
-                        unknown: "Opposed {{priority_name}} due to <a href='{{ad_url}}'>{{ad_user}} ad</a>"          
+                        known: "Se opusieron %{priority_name}} en la posición #%{position}} debido al <a href='%{ad_url}}'>aviso %{ad_user}}</a>"
+                        unknown: "Se opusieron %{priority_name}} debido al <a href='%{ad_url}}'>aviso %{ad_user}}</a>"          
             delete:
-                name: "{{user_name}} no longer opposes {{priority_name}}"
-                noself: "{{user_name}} no longer opposes"
-                nouser: "Stopped opposing {{priority_name}}"
+                name: "%{user_name}} ya no se opone a %{priority_name}}"
+                noself: "%{user_name}} ya no se opone"
+                nouser: "Dejó de oponerse %{priority_name}}"
             replaced:
-                name: "{{user_name}} opposed {{new_priority_name}} instead of {{priority_name}}"
-                noself: "{{user_name}} opposed {{new_priority_name}} instead"
-                nouser: "Opposed {{new_priority_name}} instead of {{priority_name}}"
+                name: "%{user_name}} se opuso a %{new_priority_name}} en vez de a %{priority_name}}"
+                noself: "%{user_name}} se opuso a %{new_priority_name}} en vez"
+                nouser: "Se opusieron a %{new_priority_name}} en vez de a %{priority_name}}"
                 implicit:
-                    name: "{{user_name}} is now opposing {{new_priority_name}} because {{priority_name}} was acquired"
-                    nouser: "Now opposing {{new_priority_name}} because {{priority_name}} was acquired"
+                    name: "%{user_name}} ahora se opone a %{new_priority_name}} porque %{priority_name}} fue adquirida"
+                    nouser: "Ahora se oponen a %{new_priority_name}} porque %{priority_name}} fue adquirida"
             flipped:
-                name: "{{user_name}} opposed {{new_priority_name}} instead of opposing {{priority_name}}"
-                nouser: "Opposed {{new_priority_name}} instead of opposing {{priority_name}}"
+                name: "%{user_name}} se opone a %{new_priority_name}} en vez de oponerse a %{priority_name}}"
+                nouser: "Se opusieron a %{new_priority_name}} en vez de oponerse a %{priority_name}}"
                 implicit:
-                    name: "{{user_name}} is now opposing {{new_priority_name}} because it acquired the opposers of {{priority_name}}"
-                    nouser: "Now opposing {{new_priority_name}} because it acquired the opposers of {{priority_name}}"                  
+                    name: "%{user_name}} ahora se opone a %{new_priority_name}} porque adquirió a los que se oponían a %{priority_name}}"
+                    nouser: "Ahora se oponen a %{new_priority_name}} porque adquirió a los que se oponían a %{priority_name}}"                  
         invitation:
             new:
                 name: 
-                    known: "{{user_name}} invited someone to join"
-                    unknown: "Someone sent an invitation"
-                nouser: "Invited someone to join"
+                    known: "%{user_name}} invitó a alguien a unirse"
+                    unknown: "Alguien envió una invitación"
+                nouser: "Invitaron a alguien a unirse"
             accepted:
                 name:
-                    known: "{{user_name}} accepted an invitation from {{other_user_name}} to join {{government_name}}"
-                    unknown: "{{user_name}} accepted an invitation to join {{government_name}}"
+                    known: "%{user_name}} aceptó una invitación de %{other_user_name}} para unirse a %{government_name}}"
+                    unknown: "%{user_name}} aceptó una invitación para unirse a %{government_name}}"
                 nouser:
-                    known: "Accepted an invitation from {{other_user_name}} to join {{government_name}}"
-                    unknown: "Accepted an invitation to join {{government_name}}"
+                    known: "Aceptaron una invitación de %{other_user_name}} para unirse a %{government_name}}"
+                    unknown: "Aceptaron una invitación para unirse a %{government_name}}"
         partner:
             new:
-                name: "{{partner_name}} is a new partner"
+                name: "%{partner_name}} son nuevos vínculos"
             picture:
                 new:
-                    name: "{{partner_name}} has a new logo"
+                    name: "%{partner_name}} tiene un nuevo logo"
         point:
             new:
-                name: "{{user_name}} added {{point_name}} to {{priority_name}}"
-                noself: "Added {{point_name}} to this priority"                
-                nouser: "Added {{point_name}} to {{priority_name}}"
+                name: "%{user_name}} añadió %{point_name}} a %{priority_name}}"
+                noself: "Añadió %{point_name}} a esta iniciativa"                
+                nouser: "Añadió %{point_name}} a %{priority_name}}"
             deleted:
-                name: "{{user_name}} deleted {{point_name}}"
-                nouser: "Deleted {{point_name}}"
+                name: "%{user_name}} eliminó %{point_name}}"
+                nouser: "Eliminaron %{point_name}}"
             revision:
-                name: "{{user_name}} changed the talking point's title to {{point_name}}"
-                nouser: "Changed the talking point's title to {{point_name}}"
+                name: "%{user_name}} cambió el título del punto de conversación a %{point_name}}"
+                nouser: "Cambió el título del punto de conversación a %{point_name}}"
                 content:
-                    name: "{{user_name}} revised {{point_name}}"
-                    nouser: "Revised {{point_name}}"
+                    name: "%{user_name}} revisó %{point_name}}"
+                    nouser: "Revisaron %{point_name}}"
                 link:
                     new:
-                        name: "{{user_name}} linked {{point_name}} to {{priority_name}}"
-                        nouser: "Linked {{point_name}} to {{priority_name}}"
+                        name: "%{user_name}} vinculó %{point_name}} a %{priority_name}}"
+                        nouser: "Vincularon %{point_name}} a %{priority_name}}"
                     deleted:
-                        name: "{{user_name}} removed the priority link from {{point_name}}"
-                        nouser: "Removed the priority link from {{point_name}}"
+                        name: "%{user_name}} eliminó el vínculo de %{point_name}} a una iniciativa"
+                        nouser: "Eliminaron el vínculo de %{point_name}} a una iniciativa"
                 website:
                     new:
-                        name: "{{user_name}} revised the source link for {{point_name}}"
-                        nouser: "Revised the source link for {{point_name}}"
+                        name: "%{user_name}} revisó el vínculo para %{point_name}}"
+                        nouser: "Revisaron el vínculo para %{point_name}}"
                     deleted:
-                        name: "{{user_name}} removed the source link from {{point_name}}"
-                        nouser: "Removed the source link from {{point_name}}"
+                        name: "%{user_name}} eliminó el vínculo para %{point_name}}"
+                        nouser: "Eliminaron el vínculo para %{point_name}}"
                 supportive:
-                    name: "{{user_name}} revised {{point_name}} to indicate it's supportive of {{priority_name}}"
-                    nouser: "Revised {{point_name}} to indicate it's supportive of {{priority_name}}"
+                    name: "%{user_name}} revisó %{point_name}} para indicar que apoya a %{priority_name}}"
+                    nouser: "Revisaron %{point_name}} para indicar que apoya a %{priority_name}}"
                 neutral:
-                    name: "{{user_name}} revised {{point_name}} to indicate it's neutral on {{priority_name}}"
-                    nouser: "Revised {{point_name}} to indicate it's neutral on {{priority_name}}"
+                    name: "%{user_name}} revisó %{point_name}} para indicar que es neutral frente a %{priority_name}}"
+                    nouser: "Revisaron %{point_name}} para indicar que es neutral frente a %{priority_name}}"
                 opposition:
-                    name: "{{user_name}} revised {{point_name}} to indicate it's opposed to {{priority_name}}"
-                    nouser: "Revised {{point_name}} to indicate it's opposed to {{priority_name}}"
+                    name: "%{user_name}} revisó %{point_name}} para indicar que se opone a %{priority_name}}"
+                    nouser: "Revisaron %{point_name}} para indicar que se opone a %{priority_name}}"
             helpful:
-                name: "{{user_name}} marked {{point_name}} helpful"
-                nouser: "Marked {{point_name}} helpful"
+                name: "%{user_name}} marcó %{point_name}} como útil"
+                nouser: "Marcaron %{point_name}} como útil"
                 delete:
-                    name: "{{user_name}} no longer finds {{point_name}} helpful"
-                    nouser: "No longer finds {{point_name}} helpful"
+                    name: "%{user_name}} ya no ve %{point_name}} como útil"
+                    nouser: "Ya no ven %{point_name}} como útil"
             unhelpful:
-                name: "{{user_name}} marked {{point_name}} unhelpful"
-                nouser: "Marked {{point_name}} unhelpful"
+                name: "%{user_name}} marcó %{point_name}} como inútil"
+                nouser: "Marcó %{point_name}} como inútil"
                 delete:
-                    name: "{{user_name}} no longer finds {{point_name}} unhelpful"
-                    nouser: "No longer finds {{point_name}} unhelpful"
+                    name: "%{user_name}} ya no ve %{point_name}} como inútil"
+                    nouser: "Ya no ven %{point_name}} como inútil"
         priority:
             new:
-                name: "{{user_name}} first suggested {{priority_name}}"
-                noself: "{{user_name}} first suggested this priority"
-                nouser: "Suggested {{priority_name}} as a new priority"
+                name: "%{user_name}} sugirió %{priority_name}} antes que nadie"
+                noself: "%{user_name}} sugirió esta iniciativa antes que nadie"
+                nouser: "Sugirieron %{priority_name}} como una nueva iniciativa"
             debut:
                 name: 
-                    known: "{{priority_name}} debuted on the charts at #{{position}}"
-                    unknown: "{{priority_name}} debuted on the charts"
+                    known: "%{priority_name}} apareció en la posición #%{position}}"
+                    unknown: "%{priority_name}} apareció en el listado"
                 noself: 
-                    known: "Debuted on the charts at #{{position}}"
-                    unknown: "Debuted on the charts"
+                    known: "Apareció en el listado en la posición #%{position}}"
+                    unknown: "Apareció en la lista"
             flagged:
-                name: "{{user_name}} flagged {{priority_name}} for review"
-                noself: "{{user_name}} flagged this priority for review"
-                nouser: "Flagged {{priority_name}} for review"
+                name: "%{user_name}} señaló %{priority_name}} para ser renovada"
+                noself: "%{user_name}} señaló esta iniciativa para ser renovada"
+                nouser: "Señaló %{priority_name}} para revisión"
             buried:
-                name: "{{user_name}} buried {{priority_name}}.  It's probably obvious why."
-                noself: "{{user_name}} buried this priority.  It will no longer show up in the rankings.  It's probably obvious why."
-                nouser: "Buried {{priority_name}}.  It's probably obvious why."
+                name: "%{user_name}} enterró %{priority_name}}.  Probablemente todos sepan por qué."
+                noself: "%{user_name}} enterró esta iniciativa.  Ya no va a figurar en la lista. Probablemente todos sepan por qué."
+                nouser: "Enterraron %{priority_name}}.  Probablemente todos sepan por qué."
             renamed:
-                name: "{{user_name}} renamed {{priority_name}}"
-                noself: "{{user_name}} renamed this priority {{priority_name}}"
-                nouser: "Renamed {{priority_name}}"
+                name: "%{user_name}} renombró %{priority_name}}"
+                noself: "%{user_name}} renombró esta iniciativa %{priority_name}}"
+                nouser: "Renombró %{priority_name}}"
             acquisition:
                 proposal:
-                    name: "{{user_name}} proposed {{new_priority_name}} acquire {{priority_name}}"
-                    link: "{{user_name}} proposed {{new_priority_name}} <a href='{{proposal_url}}'>acquire</a> {{priority_name}}"
-                    nouser: "Proposed {{new_priority_name}} <a href='{{proposal_url}}'>acquire</a> {{priority_name}}"
+                    name: "%{user_name}} propuso que %{new_priority_name}} adquiera %{priority_name}}"
+                    link: "%{user_name}} propuso que %{new_priority_name}} <a href='%{proposal_url}}'>adquiera</a> %{priority_name}}"
+                    nouser: "Propuso que %{new_priority_name}} <a href='%{proposal_url}}'>adquiera</a> %{priority_name}}"
                     novote:
-                        name: "{{user_name}} voted against {{new_priority_name}} acquiring {{priority_name}}"
-                        nouser: "Voted against {{new_priority_name}} acquiring {{priority_name}}"
+                        name: "%{user_name}} votó en contra de %{new_priority_name}} por la adquisición de %{priority_name}}"
+                        nouser: "Votaron en contra de %{new_priority_name}} por la adquisición de %{priority_name}}"
                     approved:
-                        name: "{{new_priority_name}} acquired {{priority_name}}"
+                        name: "%{new_priority_name}} adquirió %{priority_name}}"
                     declined:
-                        name: "{{new_priority_name}} failed to acquire {{priority_name}}"
+                        name: "%{new_priority_name}} falló al intentar adquirir %{priority_name}}"
                     deleted:
-                        name: "{{user_name}} decided not to hold a vote on {{new_priority_name}} acquiring {{priority_name}}"
-                        nouser: "Decided not to hold a vote on {{new_priority_name}} acquiring {{priority_name}}"
+                        name: "%{user_name}} decidió no votar en la adquisición de %{priority_name}} por %{new_priority_name}}"
+                        nouser: "Decidieron no votar en la adquisición de %{priority_name}} por %{new_priority_name}}"
             comment:
                 new:
-                    name: "{{user_name}} left a comment on {{priority_name}}"
-                    noself: "{{user_name}} posted a comment"
-                    nouser: "Left a comment on {{priority_name}}"
+                    name: "%{user_name}} dejó un comentario en %{priority_name}}"
+                    noself: "%{user_name}} publicó un comentario"
+                    nouser: "Dejaron un comentario en %{priority_name}}"
             first:
                 endorsed:
-                    name: "{{priority_name}} is {{user_name}} new #1 priority"
-                    noself: "This is {{user_name}} new #1 priority"
-                    nouser: "New #1 priority: {{priority_name}}"
+                    name: "%{priority_name}} es la iniciativa #1 para %{user_name}}"
+                    noself: "Esta es la iniciativa #1 de %{user_name}}"
+                    nouser: "Ahora la iniciativa #1 es %{priority_name}}"
                 opposed:
-                    name: "Opposing {{priority_name}} is {{user_name}} new #1 priority"
-                    noself: "Opposing this is {{user_name}} new #1 priority"
-                    nouser: "New #1 priority: Opposing {{priority_name}}"                    
+                    name: "Oponerse a %{priority_name}} es la prioridad #1 de %{user_name}}"
+                    noself: "Oponerse a esto es a prioridad #1 de %{user_name}}"
+                    nouser: "Ahora la iniciativa #1 es oponerse a %{priority_name}}"                    
             rising:
-                name: "{{priority_name}} is the fastest rising priority"
-                noself: "This is the fastest rising priority"
+                name: "%{priority_name}} es la iniciativa que más sube"
+                noself: "Esta es la iniciativa que más sube"
             obama_status:
                 successful:
-                    name: "{{priority_name}} was completed successfully"
-                    noself: "Completed successfully"
+                    name: "%{priority_name}} fue promovida a Propuesta!"
+                    noself: "Promovida a Propuesta!"
                 compromised:
-                    name: "{{priority_name}} was completed with a compromise"
-                    noself: "Completed with a compromise"
+                    name: "%{priority_name}} fue promovida a Propuesta con condiciones"
+                    noself: "Promovida a Propuesta con condiciones"
                 failed:
-                    name: "{{priority_name}} failed"
-                    noself: "This priority failed"
+                    name: "%{priority_name}} no prosperó :("
+                    noself: "Esta iniciativa no prosperó :("
                 intheworks:
-                    name: "{{priority_name}} is in the works"
-                    noself: "This priority is in the works"
+                    name: "%{priority_name}} está en proceso..."
+                    noself: "Esta iniciativa está en proceso..."
             tag:
                 first:
-                    name: "{{priority_name}} is the new #1 priority in {{tag_name}}"
-                    noself: "This is the new #1 priority in {{tag_name}}"
+                    name: "%{priority_name}} es ahora la #1 en %{tag_name}}"
+                    noself: "Esta es ahora la iniciativa #1 en %{tag_name}}"
                 controversial:
-                    name: "{{priority_name}} is the most controversial priority in {{tag_name}}"
-                    noself: "This is the most controversial priority in {{tag_name}}"                    
+                    name: "%{priority_name}} es la iniciativa más controversial en %{tag_name}}"
+                    noself: "Esta es la iniciativa más controversial en %{tag_name}}"                    
                 rising:
-                    name: "{{priority_name}} is the fastest rising priority in {{tag_name}}"
-                    noself: "This is the fastest rising priority in {{tag_name}}"                    
+                    name: "%{priority_name}} es la que más sube en %{tag_name}}"
+                    noself: "Esta es la iniciativa que más sube en %{tag_name}}"                    
                 obama:
                     first:
-                        name: "{{priority_name}} is the new #1 priority on {{official_user_name}} {{tag_name}} agenda"
-                        noself: "This is the new #1 priority on {{official_user_name}} {{tag_name}} agenda"
+                        name: "%{priority_name}} es la iniciativa #1 para %{official_user_name}} %{tag_name}}"
+                        noself: "Esta es ahora la iniciativa #1 para %{official_user_name}} %{tag_name}}"
         user:
             new:
-                name: "{{user_name}} joined {{government_name}}"
-                nouser: "Joined {{government_name}}"
+                name: "%{user_name}} se unió a %{government_name}}"
+                nouser: "Se unieron a %{government_name}}"
             recruited:
-                name: "{{user_name}} recruited {{other_user_name}} to {{government_name}}" 
-                nouser: "{{user_name}} recruited {{other_user_name}} to {{government_name}}" 
+                name: "%{user_name}} acercó a %{other_user_name}} a %{government_name}}" 
+                nouser: "%{user_name}} acercó a %{other_user_name}} a %{government_name}}" 
                 partner:
-                    name: "{{user_name}} recruited {{other_user_name}} to {{government_name}} through {{partner_url}}" 
-                    nouser: "Recruited {{other_user_name}} to {{government_name}} through {{partner_url}}" 
+                    name: "%{user_name}} acercó a %{other_user_name}} a %{government_name}} a través de %{partner_url}}" 
+                    nouser: "Acercaron a %{other_user_name}} a %{government_name}} a través de %{partner_url}}" 
             debut:
                 name:
-                    known: "{{user_name}} debuted on the most influential chart at #{{position}}"
-                    unknown: "{{user_name}} debuted on the most influential chart"
+                    known: "%{user_name}} apareció en la lista de los más influyentes como #%{position}}"
+                    unknown: "%{user_name}} apareció en la lista de los más influyentes"
                 nouser:
-                    known: "Debuted on the most influential chart at #{{position}}"
-                    unknown: "Debuted on the most influential chart"
+                    known: "Aparecieron en la lista de los más influyentes como #%{position}}"
+                    unknown: "Aparecieron en la lista de los más influyentes"
             picture:
                 new: 
-                    name: "{{user_name}} changed their profile picture"
-                    nouser: "Changed their profile picture"
+                    name: "%{user_name}} cambió su foto de perfil"
+                    nouser: "Cambiaron su foto de perfil"
             probation:
-                name: "{{user_name}} is on probation for a week due to repeated violations of the site rules"
-                link: "{{user_name}} is on probation for a week due to repeated violations of the <a href='/about/rules'>site rules</a>"
-                nouser: "On probation for a week due to repeated violations of the <a href='/about/rules'>site rules</a>"
+                name: "%{user_name}} está en observación por una semana debido a repetidas violaciones al reglamento"
+                link: "%{user_name}} está en observación por una semana debido a repetidas violaciones al <a href='/about/rules'>reglamento</a>"
+                nouser: "En observación por una semana debido a repetidas violaciones al <a href='/about/rules'>reglamento</a>"

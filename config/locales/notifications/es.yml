@@ -1,100 +1,100 @@
-es:
+en:
     notification:
-        sentence: "You have {{sentence}}"
+        sentence: "Tenés %{sentence}}"
         change:
             proposed:
-                name: "{{sender_name}} proposed {{new_priority_name}} acquire {{priority_name}}"
-                with_link: "{{sender_name}} proposed {{new_priority_name}} acquire {{priority_name}}.  <a href='{{change_url}}'>Please review</a>."
+                name: "%{sender_name}} propuso que %{new_priority_name}} se enlace con %{priority_name}}"
+                with_link: "%{sender_name}} propuso que %{new_priority_name}} se enlace con %{priority_name}}.  <a href='%{change_url}}'>Por favor, revisalo</a>."
                 link:
-                    one: "1 proposal to review"
-                    other: "{{count}} proposals to review"
+                    one: "1 propuesta para revisar"
+                    other: "%{count}} propuestas para revisar"
             vote:
-                name: "Voting has started on {{new_priority_name}} acquiring {{priority_name}}"
-                with_link: "Voting has started on {{new_priority_name}} acquiring {{priority_name}}.  <a href='{{vote_url}}'>Vote now</a>!"
+                name: "Empezó la votación para que %{new_priority_name}} se enlace con %{priority_name}}"
+                with_link: "Empezó la votación para que %{new_priority_name}} se enlace con %{priority_name}}.  <a href='%{vote_url}}'>Votá</a>!"
                 link:
-                    one: "1 proposal to vote on"
-                    other: "{{count}} proposals to vote on"                
+                    one: "1 propuesta lista para ser votada"
+                    other: "%{count}} propuestas listas para ser votadas"                
         comment:
-            name: "{{sender_name}} commented on {{comment_name}}"
+            name: "%{sender_name}} comentó acerca de %{comment_name}}"
             new:
                 link:
-                    one: "1 new comment"
-                    other: "{{count}} new comments"
+                    one: "1 comentario nuevo"
+                    other: "%{count}} comentario nuevo"
             profile:
-                name: "{{sender_name}} left a comment on {{user_name}} profile"
-                link: "{{sender_name}} left a comment on <a href='{{comment_url}}'>{{user_name}} profile</a>"
+                name: "%{sender_name}} dejó un comentario sobre el perfil de %{user_name}}"
+                link: "%{sender_name}} dejó un comentario sobre el <a href='%{comment_url}}'>perfil de %{user_name}}</a>"
             activity:
-                name: "{{sender_name}} commented on {{user_name}} activity"
-                link: "{{sender_name}} commented on <a href='{{comment_url}}'>{{user_name}} activity</a>"
+                name: "%{sender_name}} dejó un comentario sobre la actividad de %{user_name}}"
+                link: "%{sender_name}} dejó un comentario sobre la <a href='%{comment_url}}'>actividad de %{user_name}}</a>"
                 yours:
-                    name: "{{sender_name}} commented on your activity"
-                    link: "{{sender_name}} commented on <a href='{{comment_url}}'>your activity</a>"
+                    name: "%{sender_name}} comentó sobre tu actividad"
+                    link: "%{sender_name}} comentó sobre <a href='%{comment_url}}'>tu actividad</a>"
             flagged:
-                name: "{{sender_name}} flagged a comment by {{user_name}}"
+                name: "%{sender_name}} marcó un comentario de %{user_name}}"
                 link:
-                    one: "1 flagged comment"
-                    other: "{{count}} flagged comments"                
+                    one: "1 comentario marcado"
+                    other: "%{count}} comentarios marcados"                
         contact:
             joined:
-                name: "{{sender_name}} just joined"
+                name: "%{sender_name}} se acaba de unir"
                 link:
-                    one: "1 person you know just joined"
-                    other: "{{count}} people you know just joined"                
+                    one: "1 persona que conocés se acaba de unir"
+                    other: "%{count}} personas que conocés se acaban de unir"                
         follower:
-            name: "{{sender_name}} is now following your updates"
+            name: "%{sender_name}} está siguiendo tus actualizaciones"
             link:
-                one: "1 new follower"
-                other: "{{count}} new followers"            
+                one: "1 seguidor nuevo"
+                other: "%{count}} seguidores nuevos"            
         invitation:
             accepted:
-                name: "{{sender_name}} accepted your invitation to join {{government_name}}"
+                name: "%{sender_name}} aceptó tu invitación para unirse a %{government_name}}"
                 link:
-                    one: "1 person accepted your invitation join"
-                    other: "{{count}} people accepted your invitation to join"                
+                    one: "1 persona aceptó tu invitación para unirse"
+                    other: "%{count}} personas aceptaron tu invitación para unirse"                
         message:
-            name: "{{sender_name}} sent you a private message"
-            with_link: "{{sender_name}} sent you a <a href='{{message_url}}'>private message</a>"
+            name: "%{sender_name}} te mando un mensaje privado"
+            with_link: "%{sender_name}} te mandó un <a href='%{message_url}}'>mensaje privado</a>"
             link:
-                one: "1 message from {{sentence}}"
-                other: "{{count}} messages from {{sentence}}"            
+                one: "1 mensaje de %{sentence}}"
+                other: "%{count}} mensajes de %{sentence}}"            
         document:
             revision:
-                name: "{{sender_name}} revised {{document_name}}"
+                name: "%{sender_name}} revisó %{document_name}}"
                 link:
-                    one: "1 document revision"
-                    other: "{{count}} document revisions"                
+                    one: "1 revisión de documentos"
+                    other: "%{count}} revisioneas de documentos"                
         point:
             revision:
-                name: "{{sender_name}} revised {{point_name}}"
+                name: "%{sender_name}} revisó %{point_name}}"
                 link:
-                    one: "1 talking point revision"
-                    other: "{{count}} talking point revisions"                
+                    one: "1 revisión de puntos de conversación"
+                    other: "%{count}} revisiones de puntos de conversación"                
         priority:
             flagged:
-                name: "{{sender_name}} flagged {{priority_name}} for review"
+                name: "%{sender_name}} marcó %{priority_name}} para revisión"
                 link:
-                    one: "1 flagged priority"
-                    other: "{{count}} flagged priorities"
+                    one: "1 iniciativa marcada"
+                    other: "%{count}} iniciativas marcadas"
             finished:
                 link:
-                    one: "1 finished priority"
-                    other: "{{count}} finished priorities"                               
+                    one: "1 iniciativa finalizada"
+                    other: "%{count}} iniciativas finalizadas"                               
         profile:
             bulletin:
-                name: "{{sender_name}} posted a bulletin to your profile"
-                with_link: "{{sender_name}} posted a <a href='{{bulletin_url}}'>bulletin</a> to your profile"
+                name: "%{sender_name}} publicó un anuncio en tu perfil"
+                with_link: "%{sender_name}} publicó un <a href='%{bulletin_url}}'>anuncio</a> en tu perfil"
                 link:
-                    one: "1 new bulletin on your profile"
-                    other: "{{count}} new bulletins on your profile"                
+                    one: "1 nuevo anuncio en tu perfil"
+                    other: "%{count}} nuevos anuncios en tu perfil"                
         warning1:
-            name: "This is your first warning for violating the site rules"
-            with_link: "This is your first warning. You violated the <a href='/about/rules'>site rules</a> with <a href='{{comment_url}}'>this comment</a>."
-            link: "your first warning"
+            name: "Esta es tu primera advertencia por romper las reglas"
+            with_link: "Esta es tu primera advertencia. Acabás de romper <a href='/about/rules'>las reglas</a> con <a href='%{comment_url}}'>este comentario</a>."
+            link: "tu primera advertencia"
         warning2:
-            name: "This is your second warning for violating the site rules"
-            with_link: "This is your second warning. You violated the <a href='/about/rules'>site rules</a> with <a href='{{comment_url}}'>this comment</a>."
-            link: "your second warning"
+            name: "Esta es tu segunda advertencia por romper las reglas"
+            with_link: "Esta es tu primera advertencia. Acabás de romper <a href='/about/rules'>las reglas</a> con <a href='%{comment_url}}'>este comentario</a>."
+            link: "tu segunda advertencia"
         warning3:
-            name: "This is your third warning. You are now on probation."
-            with_link: "This is your third warning. You violated the <a href='/about/rules'>site rules</a> with <a href='{{comment_url}}'>this comment</a>. You are now on probation."
-            link: "your third warning"
+            name: "Esta es tu tercera y última advertencia. Estás complicado y en observación."
+            with_link: "Esta es tu tercera y última advertencia. Acabás de romper <a href='/about/rules'>las reglas</a> con <a href='%{comment_url}}'>este comentario</a>. Estás complicado y en observación."
+            link: "tu tercera advertencia"
