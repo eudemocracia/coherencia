@@ -626,7 +626,7 @@ es:
             title: "Presioná la X para eliminar esta iniciativa de tu lista"
         position:
             yours: "Tu iniciativa #%{position}"
-            title: "Presioná el número para cambiar su posisión en tu lista. Podés también "agarrar y soltar"los nombres para ordenarlos."
+            title: "Presioná el número para cambiar su posición en tu lista. Podés también \"agarrar y soltar\" los nombres para ordenarlos."
     facebook:
         synced: "Tu cuenta está ahora sincronizada con Facebook. En el futuro, para ingresar, simplemente presioná el botón azul grande de Facebook."
         invite:
@@ -1069,7 +1069,7 @@ es:
             title: "Iniciativas sin categorizar"
         yours:
             name: "Tus iniciativas"
-            title: "Tus iniviativas en %{government_name}"
+            title: "Tus iniciativas en %{government_name}"
             prompt: "Añadir una iniciativa a tu lista"
             heading: "Iniciativas de %{user_name}"
             outro: "También podés seguir toda la <a href='/news/your_priority_activities'>actividad</a> y <a href='/news/your_priority_discussions'>debates</a> sobre tus iniciativas."           
