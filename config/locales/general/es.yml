@@ -770,8 +770,8 @@ es:
             title: "Más hablador en %{government_name}"
         ambassadors: 
             title: "Activistas en %{government_name}"
-            intro: "Activistas son aquellos que trabajan para aumentar la cantidad de miembros en %{government_name}"
-            loggedin: "Podés se un Activista y ganar <span class='pc'>5%{currency_short_name}</span> por cada miembro nuevo que consigas.  Podés empezar por <a href='%{import_url}'>importar tus contactos de Google, Yahoo, Windows Live, o Facebook</a>."
+            intro: "Activistas son aquellos que trabajan para aumentar la cantidad de miembros en %{government_name}."
+            loggedin: "Podés ser un Activista y ganar <span class='pc'>5%{currency_short_name}</span> por cada miembro nuevo que consigas.  Podés empezar por <a href='%{import_url}'>importar tus contactos de Google, Yahoo, Windows Live, o Facebook</a>."
         twitterers: 
             title: "Twitteros en %{government_name}"
             intro: "Si querés se añadido, presioná este botón y seguí la pantalla de Twitter para autorizar a %{government_name}/NationBuilder."
@@ -906,10 +906,10 @@ es:
                 limit: "Menos de 20 caracteres"
             name:
                 label: "Título o nombre de la Organización"
-                example: "(ejemplo: Articultores, Biblioteca Central Dr. Luis Federico Leloir)"
+                example: "(ejemplo: Eudemocracia)"
             website:
                 label: "Enlace a tu página web"
-                example: "(ejemplo: http://articultores.net/)"
+                example: "(ejemplo: http://eudemocracia.org/)"
             is_daily_summary:
                 label: "Envíenme un correo semanal con un resumen de actividades"
         edit:
