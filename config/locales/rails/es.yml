@@ -108,7 +108,10 @@ es:
 # Used in array.to_sentence.
   support:
     array:
-      sentence_connector: "and" 
+      words_connector: ", "
+      two_words_connector: " y "
+      last_word_connector: " y "
+
 
   activerecord:
     errors:
