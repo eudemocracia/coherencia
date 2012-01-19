@@ -151,7 +151,7 @@ namespace :fix do
     FROM points INNER JOIN endorsements ON points.priority_id = endorsements.priority_id
     	 INNER JOIN point_qualities ON point_qualities.user_id = endorsements.user_id AND point_qualities.point_id = points.id
     where endorsements.value  =1
-    and point_qualities.value = true
+    and point_qualities.value = 'true'
     group by points.id, points.endorser_helpful_count
     having number <> endorser_helpful_count")
     for point in endorser_helpful_points
@@ -173,7 +173,7 @@ namespace :fix do
     FROM points INNER JOIN endorsements ON points.priority_id = endorsements.priority_id
     	 INNER JOIN point_qualities ON point_qualities.user_id = endorsements.user_id AND point_qualities.point_id = points.id
     where endorsements.value = -1
-    and point_qualities.value = true
+    and point_qualities.value = 'true'
     group by points.id, points.opposer_helpful_count
     having number <> opposer_helpful_count")
     for point in opposer_helpful_points
@@ -195,7 +195,7 @@ namespace :fix do
     FROM points INNER JOIN endorsements ON points.priority_id = endorsements.priority_id
     	 INNER JOIN point_qualities ON point_qualities.user_id = endorsements.user_id AND point_qualities.point_id = points.id
     where endorsements.value = 1
-    and point_qualities.value = false
+    and point_qualities.value = 'false'
     group by points.id, points.endorser_unhelpful_count
     having number <> endorser_unhelpful_count")
     for point in endorser_unhelpful_points
@@ -217,7 +217,7 @@ namespace :fix do
     FROM points INNER JOIN endorsements ON points.priority_id = endorsements.priority_id
     	 INNER JOIN point_qualities ON point_qualities.user_id = endorsements.user_id AND point_qualities.point_id = points.id
     where endorsements.value = -1
-    and point_qualities.value = false
+    and point_qualities.value = 'false'
     group by points.id, points.opposer_unhelpful_count
     having number <> opposer_unhelpful_count")
     for point in opposer_unhelpful_points
